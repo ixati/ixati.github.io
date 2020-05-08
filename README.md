@@ -5,6 +5,21 @@ Source code for ixati's website
 Files used for hosting the site are stored in the root of the project directory.
 
 `src` contains all the source files used to build the site
+```
+project/
+├── *.html              Ouputed HTML files
+├── css/                Outputed CSS files
+├── img/                Minified images
+├── fonts/              Fonts used in CSS
+├── package.json        File containing project info, scripts, and deps
+├── package-lock.json   Automatically generated file for tracking deps
+└── src/                Source folder containing working files
+    ├── content/        Markdown content, rendered into pages
+    ├── css/            Partial stylesheets
+    ├── fonts/          Font files
+    ├── img/            Unomptimized image files
+    └── template/       HTML templtes
+```
 
 ## Getting Started
 First, install [NodeJS](https://nodejs.org/en/). Make sure to run `npm install` before running any of the commands.
