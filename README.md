@@ -7,7 +7,7 @@ Files used for hosting the site are stored in the root of the project directory.
 `src` contains all the source files used to build the site
 
 ## Getting Started
-First install [NodeJS](https://nodejs.org/en/). Make sure you run `npm install` before running any of the commands.
+First, install [NodeJS](https://nodejs.org/en/). Make sure to run `npm install` before running any of the commands.
 
 From the command line, run `npm run serve` to build the site and start a server on localhost. It should open the site in your browser.
 
