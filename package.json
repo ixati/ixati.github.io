@@ -1,1 +1,37 @@
-{}
+{
+  "name": "ixati.github.io",
+  "version": "0.0.0",
+  "description": "ixati website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:html & npm run build:css & npm run build:font & npm run build:img",
+    "build:html": "pug ./src/template/ --out ./",
+    "build:css": "catw -v ./src/css/*.css > ./css/style.css",
+    "build:img": "imagemin ./src/img/* --out-dir=./img/",
+    "build:font": "cpy ./src/fonts/* ./fonts/",
+    "watch": "npm run watch:html & npm run watch:css",
+    "watch:html": "pug -w ./src/template/ --out ./",
+    "watch:css": "catw -v ./src/css/*.css -o ./css/style.css",
+    "serve": "npm run build && live-server --watch=./*.html,./css/,./img/,./fonts/",
+    "dev": "npm run watch & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ixati/ixati.github.io.git"
+  },
+  "author": "ixati, LLC",
+  "bugs": {
+    "url": "https://github.com/ixati/ixati.github.io/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "catw": "^1.0.1",
+    "cpy-cli": "^3.1.1",
+    "imagemin": "^7.0.1",
+    "imagemin-cli": "^5.1.0",
+    "liveserver": "^0.1.20",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

@@ -1,0 +1,25 @@
+@font-face {
+    font-family:"Bodoni 72";
+    src:url("Bodoni-72-Book.woff2") format("woff2")
+        url("Bodoni-72-Book.woff") format("woff"),
+        url("Bodoni-72-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../fonts/HKGrotesk-Regular.otf");
+}
+
+
+.serif {
+  font-family: "Bodoni 72";
+}
+
+h1 {
+  /* font-size: 36pt; */
+  font-size: 3vw;
+}
+p {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}

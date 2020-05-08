@@ -1,0 +1,25 @@
+/*TODO: turn these into CSS -vars? */
+.color-font-1 {
+  color: #112f67;
+}
+.color-font-2 {
+  color: #EBEAE8;
+}
+.color-font-3 {
+  color: #E3B39C;
+}
+
+.color-bkg-1 {
+  background-color: #112f67;
+}
+.color-bkg-2 {
+  background-color: #EBEAE8;
+}
+.color-bkg-3 {
+  background-color: #E3B39C;
+}
+
+/* test values */
+.color-test {
+  border: 1px solid cyan;
+}

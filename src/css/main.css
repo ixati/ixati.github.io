@@ -1,0 +1,83 @@
+body {
+  font-family: "HK Grotesk";
+  margin: 0;
+}
+/* TODO: add CSS Resets */
+h1 {
+ margin: 0;
+}
+
+/**
+ * Reset button styles.
+ * It takes a bit of work to achieve a neutral look.
+ */
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* show a hand cursor on hover; some argue that we
+  should keep the default arrow cursor for buttons */
+  cursor: pointer;
+}
+
+#button {
+  margin-top: 1em;
+  padding: 1.25em;
+  font-size: 1.25em;
+}
+
+.block {
+  display: block;
+  padding: 4em;
+}
+
+.right-align {
+  text-align: right;
+}
+
+/* grid try */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+
+[class^='grid-'] {
+  /* For testing grid */
+  /* border: 1px solid cyan; */
+}
+
+.grid-logo {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.grid-logo img {
+ max-height: 200px;
+}
+
+.grid-lead-in {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.grid-logo,
+.grid-lead-in {
+  border-right: 2px solid #112f67;
+}
+
+.grid-description {
+  grid-area: 1 / 2 / 4 / 4;
+  /* TODO: review these styles */
+  margin-top: 160px;
+  max-width: 700px;
+}
+
+section p {
+ max-width: 700px;
+}
