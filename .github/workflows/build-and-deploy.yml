@@ -1,0 +1,20 @@
+name: Build website files
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run-script build
+
+      - uses: stefanzweifel/git-auto-commit-action@v4.2.0
+        with:
+          commit_message: Apply build changes
